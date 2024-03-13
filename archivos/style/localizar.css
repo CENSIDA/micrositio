@@ -1,0 +1,236 @@
+  /* Estilos generales */
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .content {
+    margin-top: 80px;
+    margin-left: 160px;
+  }
+
+  /* Contenedor principal */
+  .wrapper {
+    display: flex;
+  }
+
+  /* Estilos del sidebar */
+  .sidebar {
+    width: 280px;
+    /* Ancho del sidebar */
+    background-color: #ffffff;
+    height: 100vh;
+    /* Altura del sidebar que ocupa toda la pantalla */
+    margin-top: 40px;
+    font-size: 14px;
+    position: sticky;
+  }
+
+  .menu {
+    padding: 30px;
+  }
+
+  .menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu-list .material-icons,
+  .material-symbols-outlined {
+    vertical-align: middle;
+    /* Alinea verticalmente el icono con el texto */
+  }
+
+  .menu-list li {
+    margin-bottom: 2px;
+    position: sticky;
+    margin: 8px 0;
+    padding: 0 10%;
+    transition: all 1s ease;
+    border-radius: 23px 23px 23px 23px;
+  }
+
+  .menu-list li:hover {
+    padding: 0 1%;
+  }
+
+  .menu-list li a {
+    display: flex;
+    color: #000000;
+    text-decoration: none;
+    transition: all .9s ease;
+    padding: 0 10%;
+    margin: 8px 0;
+    width: 240px;
+    height: 40px;
+    align-items: center;
+    border-radius: 23px 23px 23px 23px;
+  }
+
+  .menu-list li a:hover {
+    background-color: #10312b;
+    color: #ffffff;
+    padding: 0 1%;
+  }
+
+  /* Estilos del submenú */
+  .submenu {
+    display: none;
+    /* Ocultar submenú por defecto */
+    background-color: #ffffff;
+    /* Color de fondo del submenú */
+  }
+
+  .has-submenu:hover .submenu {
+    display: block;
+    /* Mostrar submenú al pasar el cursor sobre el elemento padre */
+  }
+
+  .submenu li {
+    margin-left: -20px;
+    /* Espacio para indicar el subnivel */
+    padding-left: 25px;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: justify;
+    display: block;
+  }
+
+  .submenu li:hover {
+    color: white;
+    border-radius: 25px 23px 23px 23px;
+    text-decoration: none;
+  }
+
+  .submenu li:active {
+    text-decoration: none;
+    color: #B38E5D;
+    font-weight: bold;
+    background: #10312b;
+    border-radius: solid 10px;
+    transition: all 1s ease;
+    -webkit-border-radius: 23px 23px 23px 23px;
+  }
+
+  .menu-list li a.active {
+    background-color: #10312B;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: all 1s ease;
+    border-radius: 23px 23px 23px 23px;
+  }
+
+  p {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  .sub_1 {
+    font-weight: lighter;
+    text-align: justify;
+    font-size: 24px;
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+    color: rgba(32, 32, 32, 0.815);
+  }
+
+  .menu-text {
+    margin-left: 15px;
+    font-size: 1.9rem;
+    /* Puedes ajustar el valor según el espacio que desees */
+  }
+
+  .mapa {
+    margin-left: 120px;
+    margin-top: 50px;
+    height: 550px;
+  }
+
+  .subtitulo {
+    font-size: 23px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+  }
+
+  .search-bar {
+    margin-left: 520px;
+    margin-top: 60px;
+  }
+
+  .flex-form .button {
+    background: #c7132e;
+    border: 1px solid #c7132e;
+    color: #fff;
+    padding: 0 30px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.8);
+  }
+
+  .flex-form .button:hover {
+    background: #d73851;
+    border: 1px solid #d73851;
+  }
+
+  .flex-form {
+    display: -webkit-box;
+    display: flex;
+    z-index: 10;
+    position: relative;
+    width: 160px;
+    box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.8);
+  }
+
+  .flex-form>* {
+    border: 0;
+    padding: 0 0 0 10px;
+    background: #fff;
+    line-height: 40px;
+    font-size: 20px;
+    border-radius: 0;
+    outline: 0;
+  }
+
+  input[type="search"] {
+    flex-basis: 500px;
+  }
+
+  .icono {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .info {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .info h3 {
+    margin-bottom: 10px;
+    margin-top: -10px;
+  }
+
+  .info p {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .info img {
+    margin-bottom: 10px;
+    width: 70%;
+  }
+
+  .info a {
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+  }

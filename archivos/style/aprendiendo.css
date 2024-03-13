@@ -1,0 +1,296 @@
+  /* Estilos generales */
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .content {
+    margin-top: 80px;
+    margin-left: 160px;
+  }
+
+  /* Contenedor principal */
+  .wrapper {
+    display: flex;
+  }
+
+  /* Estilos del sidebar */
+  .sidebar {
+    width: 280px;
+    /* Ancho del sidebar */
+    background-color: #ffffff;
+    height: 100vh;
+    /* Altura del sidebar que ocupa toda la pantalla */
+    margin-top: 40px;
+    font-size: 14px;
+    position: sticky;
+  }
+
+  .menu {
+    padding: 30px;
+  }
+
+  .menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu-list .material-icons,
+  .material-symbols-outlined {
+    vertical-align: middle;
+    /* Alinea verticalmente el icono con el texto */
+  }
+
+  .menu-list li {
+    margin-bottom: 2px;
+    position: sticky;
+    margin: 8px 0;
+    padding: 0 10%;
+    transition: all 1s ease;
+    border-radius: 23px 23px 23px 23px;
+  }
+
+  .menu-list li:hover {
+    padding: 0 1%;
+  }
+
+  .menu-list li a {
+    display: flex;
+    color: #000000;
+    text-decoration: none;
+    transition: all .9s ease;
+    padding: 0 10%;
+    margin: 8px 0;
+    width: 240px;
+    height: 40px;
+    align-items: center;
+    border-radius: 23px 23px 23px 23px;
+  }
+
+  .menu-list li a:hover {
+    background-color: #10312b;
+    color: #ffffff;
+    padding: 0 1%;
+  }
+
+  /* Estilos del submenú */
+  .submenu {
+    display: none;
+    /* Ocultar submenú por defecto */
+    background-color: #ffffff;
+    /* Color de fondo del submenú */
+  }
+
+  .has-submenu:hover .submenu {
+    display: block;
+    /* Mostrar submenú al pasar el cursor sobre el elemento padre */
+  }
+
+  .submenu li {
+    margin-left: -20px;
+    /* Espacio para indicar el subnivel */
+    padding-left: 25px;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: justify;
+    display: block;
+  }
+
+  .submenu li:hover {
+    color: white;
+    border-radius: 25px 23px 23px 23px;
+    text-decoration: none;
+  }
+
+  .submenu li:active {
+    text-decoration: none;
+    color: #B38E5D;
+    font-weight: bold;
+    background: #10312b;
+    border-radius: solid 10px;
+    transition: all 1s ease;
+    -webkit-border-radius: 23px 23px 23px 23px;
+  }
+
+  .menu-list li a.active {
+    background-color: #10312B;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: all 1s ease;
+    border-radius: 23px 23px 23px 23px;
+  }
+
+
+  .visor {
+    margin-top: -20px;
+    margin-left: 0px;
+  }
+
+  p {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  .sub_1 {
+    font-weight: lighter;
+    text-align: justify;
+    font-size: 24px;
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+    color: rgba(32, 32, 32, 0.815);
+  }
+
+  .menu-text {
+    margin-left: 15px;
+    font-size: 1.9rem;
+    /* Puedes ajustar el valor según el espacio que desees */
+  }
+
+  .color {
+    color: #B38E5D;
+  }
+
+  .container2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 5px 1%;
+    margin-top: -50px;
+  }
+
+  .container2 .main-video {
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .container2 .main-video video {
+    width: 680px;
+    height: 100%;
+    border-radius: 5px;
+  }
+
+  .container2 .main-video .subtitle {
+    color: #333;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 34px;
+    padding-top: 1px;
+    padding-bottom: 25px;
+  }
+
+
+  .container2 .video-list {
+    background: #10312b;
+    border-radius: 5px;
+    height: 520px;
+    width: 450px;
+    overflow: scroll;
+    margin-top: 112px;
+  }
+
+  .container2 .video-list::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  .container2 .video-list::-webkit-scrollbar-track {
+    background: #ccc;
+    border-radius: 50px;
+  }
+
+  .container2 .video-list::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 50px;
+  }
+
+  .container2 .video-list .vid video {
+    width: 150px;
+    height: 100px;
+    border-radius: 15px;
+  }
+
+  .container2 .video-list .vid {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    gap: 20px;
+    background: #10312b;
+    border-radius: 5px;
+    margin: 10px;
+    margin-top: 25px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    cursor: pointer;
+  }
+
+  .container2 .video-list .vid:hover{
+    background: #B38E5D;
+  }
+
+  .container2 .video-list .vid.active {
+    background: #B38E5D;
+  }
+
+  .container2 .video-list .vid.active .title {
+    color: #fff;
+  }
+
+
+  .container2 .video-list .vid .title {
+    color: #333;
+  }
+
+  @media (max-width:991px) {
+    .container2 {
+      grid-template-columns: 1.5fr 1fr;
+      padding: 10px;
+    }
+  }
+
+
+  @media (max-width:768px) {
+    .container2 {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+  .color {
+    color: #B38E5D;
+  }
+
+  
+.contacto{
+  width: 1000px;
+  margin: 6rem 0rem 15rem 7rem;
+}
+
+.subtitulo{
+font-size: 25px;
+margin-top: 30px;
+margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.subtitle{
+  font-size: 16px;
+  color: white;
+}
+
+.sub_otro{
+  text-align: center;
+  color: Black;
+  font-weight: bold;
+  font-size: 22px;
+  background-color: #B38E5D;
+  cursor: default;
+  margin-top: 110px;
+  margin-bottom: -115px;
+}

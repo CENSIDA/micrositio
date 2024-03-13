@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar con Submenús</title>
+    <link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
+    <link href="https://www.gob.mx/cms/application.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+    <script src="https://framework-gb.cdn.gob.mx/gobmx.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="../style/localizar.css">
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li>
+                        <a href="../../index.html"><i class="material-icons">home</i><span
+                                class="menu-text">Home</span></a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="../pages/Hepatitis/productos.html"><i
+                                class="material-symbols-outlined">coronavirus</i><span
+                                class="menu-text">Hepatitis</span></a>
+                        <ul class="submenu">
+                            <li><a href="#" class="active">Tipos de Hepatitis</a></li>
+                            <li><a href="./Hepatitis/evolucion-vhc.html">Evolución del VHC</a></li>
+                            <li><a href="./Hepatitis/liquidos-corporales.html">Liquidos Corporales que transmiten
+                                    VHC</a></li>
+                            <li><a href="./Hepatitis/factores-riesgo.html">Factores que aumentan el riesgo</a></li>
+                            <li><a href="./Hepatitis/drogas-inyectables.html">Consumo de Drogas inyectables</a></li>
+                            <li><a href="./Hepatitis/prevencion.html">Prevención</a></li>
+                            <li><a href="./Hepatitis/preguntas-frecuentes.html">Preguntas Frecuntes</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="./aprendiendo.html"><i class="material-symbols-outlined">smart_display</i><span
+                                class="menu-text">Aprendiendo</span></a>
+                    </li>
+                    <li>
+                        <a href="./visor.html"><i class="material-symbols-outlined">monitoring</i><span
+                                class="menu-text">Visor</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="active"><i class="material-symbols-outlined color">location_on</i><span
+                                class="menu-text">Localizar</span></a>
+                    </li>
+                    <li>
+                        <a href="./contacto.html"><i class="material-symbols-outlined">contact_phone</i><span
+                                class="menu-text">Contacto</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Contenido de la página -->
+        <div class="content">
+            <!-- Contenido de la página específica -->
+            <div id="root"></div>
+            <script src="../js/bundle.js"></script>
+
+            <!-- Aquí irá el contenido que cambia en cada página -->
+        </div>
+    </div>
+</body>
+
+</html>
